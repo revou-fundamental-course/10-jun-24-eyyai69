@@ -1,6 +1,6 @@
 document.getElementById('konversi').onclick = tempConvert;
 document.getElementById('reset').onclick = resetForm;
-document.getElementById('reverse').onclick = reverse;
+const errorElement = document.getElementById('error')
 
 function tempConvert() {
 
@@ -20,8 +20,4 @@ function tempConvert() {
 function resetForm() {
     document.getElementById("farenheit").value = '';
     document.getElementById("celcius").value = '';
-}
-
-function reverse() {
-    
 }

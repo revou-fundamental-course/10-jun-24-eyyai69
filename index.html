@@ -6,78 +6,84 @@
     <title>Tugas Konversi Suhu</title>
     <!--ini link css-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Website Konversi Suhu</h1>
-    </header>
+    <!--section atas-->
+    <section id="headerMain">
 
-    <!--main content-->
-    <main>
-        <h3>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik
-            tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Farenheit (&deg;F).</h3>
-
-        <!--section celcius-->
-        <section>
-            <header>
-                <h3>Celcius (&deg;C):</h3>
+        <!--section header-->
+        <section id="topHeader">
+            <header id="header">
+                <h1>Website Konversi Suhu</h1>
             </header>
-
-            <section>
-                <textarea type="number" name="celcius" id="celcius" class="input"></textarea>
-
-                <section>
-                    <button id="konversi">Konversi</button>
-                    <button id="reset">Reset</button>
-                    <button id="reverse">Reverse</button>
-                </section>
-            </section>
+            
+            <p id="subheaderFont">Masukkan suhu derajat Celcius (&deg;C) atau Farenheit (&deg;F) ke kotak dibawah, lalu klik
+                tombol Konversi untuk mendapatkan hasil konversinya.</p>
         </section>
-
-        <!--section farenheit-->
-        <section>
-            <header>
-                <h3>Farenheit (&deg;F):</h3>
-            </header>
-
-            <section>
-                <textarea type="number" name="farenheit" id="farenheit" class="input"></textarea>
-            </section>
-        </section>
-
-        <!--section calculate-->
-        <section>
-            <header>
-                <h3>Cara Kalkulasi:</h3>
-            </header>
-
-            <section>
-                <textarea></textarea>
-            </section>
-        </section>
-
+    
         <!--section formula/info-->
-        <section>
+        <section id="topFormula">
             <header>
-                <h1>Rumus konversi dari Celcius (&deg;C) ke Farenheit (&deg;F)</h1>
+                <h1>Rumus konversi</h1>
             </header>
-
-            <hr/>
-
-            <p>Suhu <span>S</span> derajat Farenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat Celcius (&deg;C)
+    
+            <p class="bodyFont">Suhu <span class="logoS">S</span> derajat Farenheit (&deg;F) sama dengan suhu <span class="logoS">S</span> dalam derajat Celcius (&deg;C)
                 kali 9/5 tambah 32.
             </P>
-
+    
             <P>
-                <span>S</span> <sub>(&deg;F)</sub> = (<span>S</span> x 9/5) + 32
-                <br>atau
+                <span class="logoS">S</span> <sub>(&deg;F)</sub> = (<span class="logoS">S</span> x 9/5) + 32
             </P>
-
+    
+            <p>atau</p>
+            
             <p>
-                <span>S</span> <sub>(&deg;F)</sub> = (<span>S</span> x 9/5) + 32
+                <span class="logoS">S</span> <sub>(&deg;F)</sub> = (<span class="logoS">S</span> x 9/5) + 32
             </p>
         </section>
-    </main>
+
+    </section>
+    
+
+    <!--section tengah-->
+    <section id="midSection">
+
+        <!--main content-->
+        <main id="mainContent">
+            <!--section celcius-->
+            <section>
+                <header>
+                    <h3>Celcius (&deg;C):</h3>
+                </header>
+    
+                <section>
+                    <textarea type="number" name="celcius" id="celcius" class="input"></textarea>
+                </section>
+            </section>
+    
+            <!--section farenheit-->
+            <section>
+                <header>
+                    <h3>Farenheit (&deg;F):</h3>
+                </header>
+    
+                <section>
+                    <textarea type="number" name="farenheit" id="farenheit" class="input"></textarea>
+                </section>
+            </section>
+    
+        </main>
+
+        <section>
+            <button id="konversi">Konversi</button>
+            <button id="reset">Reset</button>
+        </section>
+
+    </section>
 
     <!--ini link javascript-->
     <script src="js/script.js"></script>
