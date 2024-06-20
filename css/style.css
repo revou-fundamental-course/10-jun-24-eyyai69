@@ -1,0 +1,43 @@
+/*Ini CSS*/
+
+body {
+    background-color: #76798e;
+    text-align: center;
+    color: white;
+}
+
+#konversi {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #cac3b9;
+    border: 1px solid #cac3b9;
+    border-radius: 50px;
+}
+#konversi:hover {
+    background-color: #8b8070;
+    color: white;
+}
+
+#reset {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #cac3b9;
+    border: 1px solid #cac3b9;
+    border-radius: 50px;
+}
+#reset:hover {
+    background-color: #8b8070;
+    color: white;
+}
+
+#reverse {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #cac3b9;
+    border: 1px solid #cac3b9;
+    border-radius: 50px;
+}
+#reverse:hover {
+    background-color: #8b8070;
+    color: white;
+}
